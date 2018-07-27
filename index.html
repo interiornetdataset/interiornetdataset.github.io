@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-9795741-5', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+	<title>InteriorNet: Mega-scale Multi-sensor Photo-realistic Indoor Scenes Dataset</title>
+	<meta name="author" content="Wenbin Li">
+	<link rel="stylesheet" type="text/css" href="./items/styles.css">
+	<link rel="stylesheet" type="text/css" href="./items/thickbox.css" media="screen">
+    <script type="text/javascript" src="./items/jquery.js" charset="utf-8"></script><style type="text/css"></style>
+    <script type="text/javascript" src="./items/thickbox.js" charset="utf-8"></script>
+</head>
+<body screen_capture_injected="true">
+	<div id="centerwrap">
+	<div id="innerwrap">
+		<div id="head">
+			<h1>InteriorNet: Mega-scale Multi-sensor Photo-realistic <br> Indoor Scenes Dataset</h1>
+			<h3>Wenbin Li, Sajad Saeedi, John McCormac, Ronald Clark, Dimos Tzoumanikas, <br> 
+           Qing Ye, Yuzhong Huang, Rui Tang and Stefan Leutenegger</h3>
+            <h4>Imperial College London&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kujiale.com
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;University of Southern California</h4>
+            <br>
+		</div>
+		<div class="hr"><!-- --></div>
+		<br>
+		<br>
+
+		<div id="content">
+				<iframe width="782" height="440" src="https://www.youtube.com/embed/bmmBgB_3AYk?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				<br><br>
+				<p align="justify">
+				Datasets have gained an enormous amount of popularity in the computer vision community, from training and evaluation of Deep Learning-based methods to benchmarking Simultaneous Localization and Mapping (SLAM). Without a doubt, synthetic imagery bears a vast potential due to scalability in terms of amounts of data obtainable without tedious manual ground truth annotations or measurements. Here, we present a dataset with the aim of providing a higher degree of photo-realism, larger scale, more variability as well as serving a wider range of purposes compared to existing datasets. Our dataset leverages the availability of millions of professional interior designs and millions of production-level furniture and object assets -- all coming with fine geometric details and high-resolution texture. We render high-resolution and high frame-rate video sequences following realistic trajectories while supporting various camera types as well as providing inertial measurements. Together with the release of the dataset, we will make executable program of our interactive simulator software as well as our renderer available. To showcase the usability and uniqueness of our dataset, we show benchmarking results of both sparse and dense SLAM algorithms.
+				</p><br>
+				
+
+<center style="">
+			
+				<table>
+				<tbody><tr><td><img src="./items/InteriorNet.jpg" width="750"></td></tr>
+				</tbody></table><br>
+				<div align="justify">System Overview: an end-to-end pipeline to render an RGB-D-inertial benchmark for large scale interior scene understanding and mapping. (<strong>A</strong>) We collect around 1 million CAD models provided by world-leading furniture manufacturers. These models have been used in the real-world production. (<strong>B</strong>) Based on those models, around 1,100 professional designers create around 22 million interior layouts. Most of such layouts have been used in real-world decorations. (<strong>C</strong>) For each layout, we generate a number of configurations to represent different random lightings and simulation of scene change over time in daily life. (<strong>D</strong>) We provide an interactive simulator (<em>ViSim</em>) to help for creating ground truth IMU, events, as well as monocular or stereo camera trajectories including hand-drawn, random walking and neural network based realistic trajectory. (<strong>E</strong>) All supported image sequences and ground truth data. </div><br>
+				
+				<table>
+				
+				<table>
+				<tbody><tr><td><img src="./items/InteriorNet_sim.jpg" width="750"></td></tr>
+				</tbody></table>
+				<div align="justify"><em>ViSim</em>: Our interactive simulator. <em>ViSim</em> contains a design view, an information panel as well as a set of options for camera settings, trajectory smoothness, trajectory adjustment and IMU and Events settings. </div><br>
+				
+				<table>
+				<tbody><tr><td><img src="./items/InteriorNet_labels.jpg" width="750"></td></tr>
+				</tbody></table><br>
+				<div align="justify">Our rendered images and the associated NYU40 labels. </div><br>
+				
+				<p align="justify">
+				We have presented a very large synthetic dataset of indoor video sequences that accesses millions of interior design layouts, furniture and object models which were all professionally designed to a highest specification. We then provide variability in terms of lighting and object rearrangement to further devise our scenes and simulate the environment of daily life. As a result, we obtain highly photo-realistic footage at a high frame-rate. Furthermore, a large variety of different trajectory types was synthesized, as we believe the temporal aspect should be given closer attention. We demonstrate the usefulness of our dataset by evaluating SLAM algorithms. 
+				<br><br>
+				In this work, we configured lighting and scene changes in a random fashion due to lack of real-world ground truth for lighting and scene changes. Also, the scene rearrangement was obtained via a physics engine accessing physical parameters e.g. mass, size, friction coefficient etc. Alternatively, a data-driven approach could be used - which we leave as future work.
+				</p><br>
+				<table bgcolor="#808080" border="0" width="100%"><tbody><tr>
+				<td><font color="#EBEBEB" size="3" face="verdana"><strong>Download</strong></font></td>
+				</tr></tbody></table> <br>
+				<p align="justify">
+					TODO.
+				</p><br>
+				<table bgcolor="#808080" border="0" width="100%"><tbody><tr>
+				<td><font color="#EBEBEB" size="3" face="verdana"><strong>Citation</strong></font></td>
+				</tr></tbody></table>
+					<pre><p align="left">
+@inproceedings { InteriorNet18,
+      author = { Wenbin Li and Sajad Saeedi and John McCormac and Ronald Clark and 
+                 Dimos Tzoumanikas and Qing Ye and Yuzhong Huang and Rui Tang and 
+                 Stefan Leutenegger },
+   booktitle = { British Machine Vision Conference (BMVC) },
+       title = { InteriorNet: Mega-scale Multi-sensor Photo-realistic Indoor Scenes Dataset },
+        year = { 2018 }
+}
+					</p></pre>
+			<table bgcolor="#808080" border="0" width="100%"><tbody><tr>
+<td><font color="#EBEBEB" size="3" face="verdana"><strong>Licence</strong></font></td>
+</tr></tbody></table> <br>
+		<p align="justify">
+			TODO.
+		</p><br>
+		<table bgcolor="#808080" border="0" width="100%"><tbody><tr>
+<td><font color="#EBEBEB" size="3" face="verdana"><strong>Acknowledgements</strong></font></td>
+</tr></tbody></table> <br>
+		<p align="justify">
+			We would like to thank <a href="Kujiale.com"><strong>Kujiale.com</strong></a> for providing their database of production furniture models and layouts, as well as access to their GPU/CPU clusters. We also thank the Kujiale artists and other professionals for their great efforts into editing and labelling millions of models and scenes. We also highly appreciate comments and technical support from <em>Kujiale Rendering Group</em>, as well as helpful discussions and comments from Prof. <a href="https://www.doc.ic.ac.uk/~ajd"><strong>Andrew Davison</strong></a> and other members of <em>Robot Vision Group</em> of Imperial College London. This research is supported by the EPSRC grants PAMELA <a href="http://gow.epsrc.ac.uk/NGBOViewGrant.aspx?GrantRef=EP/K008730/1"><strong>EP/K008730/1</strong></a>, Aerial ABM <a href="http://gow.epsrc.ac.uk/NGBOViewGrant.aspx?GrantRef=EP/N018494/1"><strong>EP/N018494/1</strong></a>, and Imperial College London.
+		</p>
+
+<br>
+		
+			</center>
+			<br><br><br><br>
+		</div>
+	
+		<div id="foot">
+		  <p>Last updated: 20th December 2017</p></div>
+	</div>
+	
+	</div>
+	
+	
+
+
+</body></html>
